@@ -27,14 +27,14 @@ num1이 100이고 num2가 2이므로 100 - 2 = 98을 return합니다.
 ```
 package level0.day01;
 
-class Solution {
+class Solution1 {
     public int solution(int num1, int num2) {
         return num1 - num2;
     }
 
     // 테스트용 main 메서드
     public static void main(String[] args) {
-        level0.day01.Solution s = new level0.day01.Solution();
+        Solution1 s = new Solution1();
 
         int num1 = 2;
         int num2 = 3;
@@ -77,14 +77,18 @@ num1이 7이고 num2가 99이므로 다릅니다. 따라서 -1을 return합니�
 ```
 package level0.day01;
 
-class Solution {
+class Solution2 {
     public int solution(int num1, int num2) {
-        return num1 - num2;
+        if (num1 == num2) {
+            return 1;
+        } else {
+            return -1;
+        }
     }
 
     // 테스트용 main 메서드
     public static void main(String[] args) {
-        level0.day01.Solution s = new level0.day01.Solution();
+        Solution2 s = new Solution2();
 
         int num1 = 2;
         int num2 = 3;
