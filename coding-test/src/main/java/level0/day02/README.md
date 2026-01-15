@@ -286,6 +286,7 @@ class Solution6 {
         return numbers;
         /*
             int[] arr = numbers;
+            // 배열의 각 요소에 값을 할당하는 메서드
             Arrays.setAll(arr, i -> numbers[i] *2);
             return arr;
         */
